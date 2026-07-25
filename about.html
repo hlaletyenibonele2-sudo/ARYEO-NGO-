@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About — Your NGO Name</title>
+  <meta name="description" content="About our NGO, mission, history and team.">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Small page-specific tweaks if external CSS missing */
+    .hero{padding:2rem 0;background:linear-gradient(180deg,rgba(11,110,253,0.05),transparent)}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:1rem}
+    @media(max-width:800px){.two-col{grid-template-columns:1fr}}
+    .card{background:#fff;padding:1rem;border-radius:6px}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Your NGO Name</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="programs.html">Programs</a>
+        <a href="impact.html">Impact</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+        <a class="donate-btn" href="donate.html">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>About Us</h1>
+        <p class="lede">We work to create lasting, positive change in our community through focused programs and partnerships.</p>
+      </div>
+    </section>
+
+    <section class="container two-col" style="margin-top:1.5rem">
+      <div>
+        <article class="card">
+          <h2>Our Mission</h2>
+          <p>To empower vulnerable communities with education, health services, and sustainable livelihood programs that improve quality of life.</p>
+        </article>
+
+        <article class="card" style="margin-top:1rem">
+          <h2>History</h2>
+          <p>Founded in [Year], we began as a small volunteer group and have grown into a registered non-profit delivering programs in several regions.</p>
+          <p>Over the years we have focused on measurable impact and transparent operations.</p>
+        </article>
+
+        <article class="card" style="margin-top:1rem">
+          <h2>Values</h2>
+          <ul>
+            <li>Respect & dignity</li>
+            <li>Transparency</li>
+            <li>Sustainability</li>
+            <li>Collaboration</li>
+          </ul>
+        </article>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Leadership</h3>
+          <p>Executive Director: Jane Doe</p>
+          <p>Program Manager: John Smith</p>
+        </div>
+
+        <div class="card" style="margin-top:1rem">
+          <h3>Get involved</h3>
+          <p>Volunteer, partner, or donate to support our work. <a href="contact.html">Contact us</a> to learn more.</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Your NGO Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

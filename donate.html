@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Donate — Your NGO Name</title>
+  <meta name="description" content="Support our work by donating.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Your NGO Name</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="impact.html">Impact</a>
+        <a href="team.html">Team</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Donate</h1>
+        <p class="lede">Thank you for supporting our mission. Choose an option below to contribute.</p>
+      </div>
+    </section>
+
+    <section class="container" style="margin-top:1rem">
+      <div class="card">
+        <h2>One-time donation</h2>
+        <p>We will integrate your preferred local payment gateway. Provide the gateway name and API documentation and we will implement a secure checkout and receipt emails.</p>
+      </div>
+
+      <div class="card" style="margin-top:1rem">
+        <h2>Bank transfer</h2>
+        <p>Account: [Account name]<br>Bank: [Bank name]<br>IBAN/Account number: [placeholder]</p>
+      </div>
+
+      <div class="card" style="margin-top:1rem">
+        <h2>Monthly giving</h2>
+        <p>Support our ongoing work with a recurring gift. Implementation pending on gateway selection.</p>
+      </div>
+
+      <p style="margin-top:1rem">When you're ready, share the local payment gateway name and any integration docs (API keys, webhook docs). I will add the checkout form and serverless webhook handler.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Your NGO Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
