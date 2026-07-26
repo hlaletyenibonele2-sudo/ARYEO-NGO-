@@ -58,9 +58,9 @@ body{
 }
 
 .brand{
-   
+    display:flex;
     align-items:center;
-    gap:10px;
+    gap:12px;
     font-size:1.5rem;
     font-weight:700;
     text-decoration:none;
@@ -68,11 +68,10 @@ body{
 }
 
 .brand img{
-    width:45px;
-    height:45px;
+    width:60px;
+    height:60px;
     border-radius:50%;
     object-fit:cover;
-   
 }
 
 .main-nav a{
