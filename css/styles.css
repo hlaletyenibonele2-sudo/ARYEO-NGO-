@@ -52,6 +52,7 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    width:100%;
     padding:15px 0;
 }
 
@@ -60,8 +61,8 @@ body{
     align-items:center;
     gap:15px;
     text-decoration:none;
+    flex:1;
 }
-
 .brand img{
     width:70px;
     height:70px;
@@ -103,13 +104,13 @@ body{
 }
 
 .donate-btn{
+    margin-left:auto;
     background:#F57C00;
     color:#fff;
     text-decoration:none;
     padding:12px 28px;
     border-radius:8px;
     font-weight:700;
-    transition:.3s;
 }
 
 .donate-btn:hover{
