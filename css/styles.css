@@ -24,6 +24,9 @@
     padding:0;
     box-sizing:border-box;
 }
+body{
+    font-family:'Poppins',sans-serif;
+}
 
 body{
     font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
