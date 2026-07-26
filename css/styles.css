@@ -43,62 +43,77 @@ body{
    ========================== */
 
 .site-header{
-    background:var(--white);
-    border-bottom:4px solid var(--primary);
-    position:sticky;
-    top:0;
-    z-index:1000;
+    background:#fff;
+    border-bottom:4px solid #2E7D32;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
-.header-inner{
+.top-header{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:1rem 0;
+    padding:15px 0;
 }
 
 .brand{
     display:flex;
     align-items:center;
-    gap:12px;
-    font-size:1.5rem;
-    font-weight:700;
+    gap:15px;
     text-decoration:none;
-    color:var(--dark);
 }
 
 .brand img{
-    width:80px;
-    height:80px;
-    border-radius:60%;
+    width:70px;
+    height:70px;
+    border-radius:50%;
     object-fit:cover;
 }
 
+.brand-text h2{
+    margin:0;
+    color:#0B3D6D;
+    font-size:1.6rem;
+    font-weight:700;
+}
+
+.brand-text p{
+    margin:4px 0 0;
+    color:#2E7D32;
+    font-size:1rem;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.main-nav{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:15px 0;
+}
+
 .main-nav a{
+    color:#0B3D6D;
     text-decoration:none;
-    color:var(--dark);
-    margin-left:1rem;
-    font-weight:500;
+    font-weight:600;
     transition:.3s;
 }
 
 .main-nav a:hover{
-    color:var(--primary);
+    color:#F57C00;
 }
 
-/* Donate Button */
-
 .donate-btn{
-    background:var(--orange);
-    color:white;
-    padding:.6rem 1rem;
-    border-radius:6px;
+    background:#F57C00;
+    color:#fff;
     text-decoration:none;
+    padding:12px 28px;
+    border-radius:8px;
+    font-weight:700;
     transition:.3s;
 }
 
 .donate-btn:hover{
-    background:#d65a00;
+    background:#E66A00;
 }
 
 /* ==========================
