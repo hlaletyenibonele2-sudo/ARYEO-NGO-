@@ -446,3 +446,54 @@ section.show{
     transform:translateY(0);
 
 }
+/* ==========================
+   Mobile Navigation
+========================== */
+
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    font-size:2rem;
+    cursor:pointer;
+    color:var(--dark);
+}
+
+@media(max-width:900px){
+
+    .top-header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .brand-text h2{
+        font-size:1.2rem;
+    }
+
+    .donate-btn{
+        display:none;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .main-nav{
+
+        display:none;
+        flex-direction:column;
+        text-align:center;
+        padding:20px 0;
+        background:white;
+        gap:15px;
+
+    }
+
+    .main-nav.active{
+
+        display:flex;
+
+    }
+
+}
