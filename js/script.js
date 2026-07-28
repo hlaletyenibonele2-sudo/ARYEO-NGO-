@@ -95,12 +95,15 @@ sections.forEach(section => {
     observer.observe(section);
 
 });
-const menuToggle = document.getElementById("menu-toggle");
-const nav = document.querySelector(".main-nav");
+const menuToggle=document.getElementById("menu-toggle");
+
+const nav=document.querySelector(".main-nav");
 
 if(menuToggle){
 
     menuToggle.addEventListener("click",()=>{
+
+        menuToggle.classList.toggle("active");
 
         nav.classList.toggle("active");
 
