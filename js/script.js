@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("ARYEO Website Loaded");
 
 });
+
+// Current year
 const year = document.getElementById("year");
 
 if(year){
@@ -16,58 +18,67 @@ if(year){
 
 }
 
-Now e
-document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
-    anchor.addEventListener("click",function(e){
+    anchor.addEventListener("click", function(e) {
 
-        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
 
-        document.querySelector(this.getAttribute("href"))
-        .scrollIntoView({
+        if(target){
 
-            behavior:"smooth"
+            e.preventDefault();
 
-        });
+            target.scrollIntoView({
+
+                behavior:"smooth"
+
+            });
+
+        }
 
     });
 
 });
+
+// Active navigation
 const currentPage = window.location.pathname.split("/").pop();
 
-document.querySelectorAll(".main-nav a").forEach(link=>{
+document.querySelectorAll(".main-nav a").forEach(link => {
 
-    const href = link.getAttribute("href");
-
-    if(href===currentPage){
+    if(link.getAttribute("href") === currentPage){
 
         link.classList.add("active");
 
     }
 
 });
-window.addEventListener("scroll",()=>{
 
-    const header=document.querySelector(".site-header");
+// Sticky header
+const header = document.querySelector(".site-header");
 
-    if(window.scrollY>80){
+window.addEventListener("scroll", () => {
+
+    if(!header) return;
+
+    if(window.scrollY > 80){
 
         header.classList.add("sticky");
 
-    }
-
-    else{
+    }else{
 
         header.classList.remove("sticky");
 
     }
 
 });
-const sections=document.querySelectorAll("section");
 
-const observer=new IntersectionObserver(entries=>{
+// Fade in sections
+const sections = document.querySelectorAll("section");
 
-    entries.forEach(entry=>{
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
 
         if(entry.isIntersecting){
 
@@ -79,7 +90,7 @@ const observer=new IntersectionObserver(entries=>{
 
 });
 
-sections.forEach(section=>{
+sections.forEach(section => {
 
     observer.observe(section);
 
