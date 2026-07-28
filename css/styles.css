@@ -416,3 +416,16 @@ button:hover{
     font-weight:bold;
 
 }
+.site-header.sticky{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    z-index:999;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
