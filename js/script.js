@@ -46,3 +46,20 @@ document.querySelectorAll(".main-nav a").forEach(link=>{
     }
 
 });
+window.addEventListener("scroll",()=>{
+
+    const header=document.querySelector(".site-header");
+
+    if(window.scrollY>80){
+
+        header.classList.add("sticky");
+
+    }
+
+    else{
+
+        header.classList.remove("sticky");
+
+    }
+
+});
