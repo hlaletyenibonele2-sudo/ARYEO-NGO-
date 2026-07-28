@@ -450,13 +450,32 @@ section.show{
    Mobile Navigation
 ========================== */
 
+/* ===========================
+   Hamburger Button
+=========================== */
+
 .menu-toggle{
+
     display:none;
+    width:45px;
+    height:45px;
     background:none;
     border:none;
-    font-size:2rem;
     cursor:pointer;
-    color:var(--dark);
+    position:relative;
+
+}
+
+.menu-toggle span{
+
+    display:block;
+    width:28px;
+    height:3px;
+    background:#18497c;
+    margin:6px auto;
+    border-radius:10px;
+    transition:.35s;
+
 }
 
 @media(max-width:900px){
