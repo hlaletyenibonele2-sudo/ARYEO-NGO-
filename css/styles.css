@@ -82,6 +82,7 @@ body{
     gap:15px;
     text-decoration:none;
     flex:1;
+   margin-left:calc(50% - 50vw + 24px);
 }
 .brand img{
     width:70px;
